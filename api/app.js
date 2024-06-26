@@ -9,7 +9,6 @@ const authRoutes = require('./routes/auth');
 dotenv.config();
 const app = express();
 
-// Configuração do CORS para permitir todas as origens usadas pelo seu frontend no Vercel
 const corsOptions = {
   origin: [
     'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app',
