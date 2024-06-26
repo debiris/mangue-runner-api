@@ -15,7 +15,7 @@ const corsOptions = {
     'https://mangue-runner-api.vercel.app/cadastro.html',
     'https://mangue-runner-api.vercel.app/login.html',
   ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
