@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "build": "cp -R assets/ templates/ public/"
+    }
+  }
+  

@@ -1,0 +1,23 @@
+{
+  "name": "user-auth-api",
+  "version": "1.0.0",
+  "description": "API de login e cadastro de usuários",
+  "main": "app.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.3"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,23 @@
+
+.container{
+    margin-top: 6rem;
+}
+
+.form-image, form{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.form form{
+    width: 17rem;
+}
+
+.text-welcome{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-group{
+    flex-direction: column;
+}
+
