@@ -9,9 +9,13 @@ const authRoutes = require('./routes/auth');
 dotenv.config();
 const app = express();
 
-// Configuração do CORS para permitir requisições do Vercel
+// Configuração do CORS para permitir todas as origens usadas pelo seu frontend no Vercel
 const corsOptions = {
-  origin: 'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app',
+  origin: [
+    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app',
+    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app/login.html',
+    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app/cadastro.html',
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
@@ -36,3 +40,4 @@ app.get('/api/protected', authMiddleware, (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+
