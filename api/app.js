@@ -11,9 +11,9 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app',
-    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app/login.html',
-    'https://mangue-runner-b7bbj31uc-debiris-projects.vercel.app/cadastro.html',
+    'https://mangue-runner-api.vercel.app/',
+    'https://mangue-runner-api.vercel.app/cadastro.html',
+    'https://mangue-runner-api.vercel.app/login.html',
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
